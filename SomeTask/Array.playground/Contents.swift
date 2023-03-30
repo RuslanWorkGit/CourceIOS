@@ -42,3 +42,4 @@ print("Does the group empty? - \(group.isEmpty)")
 let newGroup = group
 
 group.removeAll()
+
