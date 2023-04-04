@@ -36,3 +36,6 @@ case 6: print("Satuday")
 case 7: print("Sanday")
 default: print("Wrong value, use it in range 1 to 7")
 }
+
+
+
