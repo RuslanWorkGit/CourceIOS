@@ -12,6 +12,16 @@ class Phone {
         self.weight = phoneWeight
     }
     
+    init (phoneNum: Int, modelNam: String) {
+        self.number = phoneNum
+        self.model = modelNam
+        self.weight = 000
+    }
+    
+    convenience init () {
+        self.init(phoneNumber: 000000000, modelName: "None", phoneWeight: 000)
+    }
+    
     func recieveCall(name: String) {
         print("\(name) is calling")
     }
@@ -44,3 +54,6 @@ for i in phoneArray {
     i.sendMessage(number: [953489293, 783412533, 98138592], message: "Hello, I am from company Oryflame, do you need help?")
 }
 
+
+let somePhone1 = Phone()
+let somePhone2 = Phone(phoneNum: 828498193, modelNam: "Some Phone")
