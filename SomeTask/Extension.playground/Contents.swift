@@ -101,53 +101,51 @@ extension Alive {
 
 
 //Створення персонажів
-struct firstHero: Runnable {
-    func run() {
-        print("Iron man - run")
-    }
+struct FirstHero: Runnable {
+
 }
 
-struct secondHero: Flyable{
+struct SecondHero: Flyable{
     
 }
 
-struct thirdHero: Alive {
+struct ThirdHero: Alive {
     
 }
 
-struct fourthero: Runnable, Flyable {
+struct FourhtHero: Runnable, Flyable {
     
 }
 
-struct fifthHero: Runnable, Alive {
+struct FifthHero: Runnable, Alive {
     
 }
 
-struct sixthHero: Flyable, Alive {
+struct SixthHero: Flyable, Alive {
     
 }
 
 //Дефолтна реалізація для всіх персонажів
 
-extension firstHero {
+extension FirstHero {
     func run() {
         print("run")
     }
 }
 
-extension secondHero {
+extension SecondHero {
     func fly() {
         print("fly")
     }
 }
 
-extension thirdHero {
+extension ThirdHero {
     func grow() {
         print("grow")
     }
 }
 
-extension fourthero {
+extension FourhtHero {
     func run() {
         print("run")
     }
@@ -157,22 +155,35 @@ extension fourthero {
     }
 }
 
-extension fifthHero {
+extension FifthHero {
     func run() {
         print("run")
-    }
-    
-    func grow() {
-        print("grow")
-    }
-}
-
-extension sixthHero {
-    func fly() {
-        print("fly")
     }
     
     func grow() {
         print("grow")
     }
 }
+
+extension SixthHero {
+    func fly() {
+        print("fly")
+    }
+    
+    func grow() {
+        print("grow")
+    }
+}
+
+let first = FirstHero()
+let second = SecondHero()
+let third = ThirdHero()
+let fourth = FourhtHero()
+let fifth = FifthHero()
+let sixth = SixthHero()
+
+first.run()
+third.grow()
+fourth.fly()
+fifth.eat()
+sixth.breath()
