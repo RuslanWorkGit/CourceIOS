@@ -75,3 +75,13 @@ print(result)
 let myPosition1 = Salary.junior(800)
 let result1 = checkSalary(position: myPosition1)
 print(result1)
+
+
+enum DayOfWeek: Int, CaseIterable{
+    
+case monday = 1, tuesday, wednesda, thursday, friday, satuday, sunday
+}
+
+let days = DayOfWeek.allCases
+let myDay = days[1]
+myDay.rawValue
